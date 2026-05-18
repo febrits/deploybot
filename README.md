@@ -1,73 +1,38 @@
-# React + TypeScript + Vite
+# DeployBot — One-Click Deploy Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Deploy dashboard for managing projects, deployments, and repositories.
 
-Currently, two official plugins are available:
+**Live:** https://deploybot.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Overview dashboard with stats
+- Deployment history with rollback
+- Repository management
+- One-click deploy modal
+- Environment variables editor
+- Settings and configuration
 
-## React Compiler
+## Managed Projects
+- TaskFlow → https://taskflow-livid-mu.vercel.app
+- DevBlog → https://devblog-three-ochre.vercel.app
+- SnapURL → https://snapurl-five.vercel.app
+- InvoiceKit → https://invoicekit-olive.vercel.app
+- HabitGrid → https://habitgrid-eight.vercel.app
+- ChatVault → https://chatvault-nine.vercel.app
+- NotePad → https://notepad-one-beta.vercel.app
+- CalendarHub → https://calendarhub-indol.vercel.app
+- ProductCatalog → https://productcatalog-phi.vercel.app
+- GameSnake → https://gamesnake-two.vercel.app
+- FileVault → https://filevault-amber.vercel.app
+- APIForge → https://apiforge-nu.vercel.app
+- DataLens → https://datalens-one.vercel.app
+- AuthKit → https://authkit-sepia.vercel.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
+React 19 · TypeScript · Tailwind CSS v4 · Vite · Framer Motion · Lucide React
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Getting Started
+```bash
+npm install
+npm run dev
 ```
