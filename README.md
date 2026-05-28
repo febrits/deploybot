@@ -1,38 +1,24 @@
-# DeployBot — One-Click Deploy Dashboard
+# deploybot
 
-Deploy dashboard for managing projects, deployments, and repositories.
-
-**Live:** https://deploybot.vercel.app
+One-click deploy dashboard connecting GitHub repos to Vercel with build monitoring.
 
 ## Features
-- Overview dashboard with stats
-- Deployment history with rollback
-- Repository management
-- One-click deploy modal
-- Environment variables editor
-- Settings and configuration
 
-## Managed Projects
-- TaskFlow → https://taskflow-livid-mu.vercel.app
-- DevBlog → https://devblog-three-ochre.vercel.app
-- SnapURL → https://snapurl-five.vercel.app
-- InvoiceKit → https://invoicekit-olive.vercel.app
-- HabitGrid → https://habitgrid-eight.vercel.app
-- ChatVault → https://chatvault-nine.vercel.app
-- NotePad → https://notepad-one-beta.vercel.app
-- CalendarHub → https://calendarhub-indol.vercel.app
-- ProductCatalog → https://productcatalog-phi.vercel.app
-- GameSnake → https://gamesnake-two.vercel.app
-- FileVault → https://filevault-amber.vercel.app
-- APIForge → https://apiforge-nu.vercel.app
-- DataLens → https://datalens-one.vercel.app
-- AuthKit → https://authkit-sepia.vercel.app
+- GitHub repo browser\n- One-click deploy to Vercel/Netlify\n- Deployment history and status tracking\n- Build log viewer\n- Environment variable management\n- Rollback support
 
-## Tech Stack
-React 19 · TypeScript · Tailwind CSS v4 · Vite · Framer Motion · Lucide React
+## Quick Start
 
-## Getting Started
 ```bash
+git clone https://github.com/febrits/deploybot.git
+cd deploybot
 npm install
 npm run dev
 ```
+
+## Tech Stack
+
+- React + TypeScript\n- Vite\n- GitHub API integration\n- Vercel API integration
+
+## License
+
+[MIT](LICENSE)
